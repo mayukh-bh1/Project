@@ -1,1 +1,1 @@
-This is a grocery shopping project made using java fundamentals
+This is a grocery shopping console made using java fundamentals
