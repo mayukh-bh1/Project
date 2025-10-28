@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="profile_name">
+                <a href="#home">Mayukh Bhattacharya</a>
+            </div>
+            <div class="topmenu">
+                <a href="#about" class="topmenu">About</a>
+                <a href="#skills" class="topmenu">Skills</a>
+                <a href="#projects" class="topmenu">Projects</a>
+                <a href="#recommendations" class="topmenu">Recommendations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <div class="home-content">
+            <h1>Mayukh Bhattacharya</h1>
+            <p>mayukh@gmail.com</p>
+            <p>+1 (555) 123-4567</p>
+        </div>
+        <a href="#home" class="home-icon">
+            <img src="images/home-icon.svg" alt="Home" width="63" height="63">
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Mayukh Bhattacharya" class="profile-image">
+            <div class="about-text">
+                <p>Hi, I'm Mayukh Bhattacharya! I am a passionate full-stack developer with 3 years of experience in building web applications. I specialize in creating responsive and user-friendly interfaces while ensuring robust backend functionality. My expertise includes modern JavaScript frameworks, cloud deployment, and agile development methodologies.</p>
+                <p>I enjoy solving complex problems and continuously learning new technologies to stay updated with industry trends. When I'm not coding, you can find me hiking, reading tech blogs, or contributing to open-source projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="images/html-logo.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/css-logo.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/js-logo.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>2.5 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/react-logo.png" alt="React">
+                <h3>React</h3>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="images/node-logo.png" alt="Node.js">
+                <h3>Node.js</h3>
+                <p>1.5 years experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <ul>
+                    <li>Developed a full-stack e-commerce solution with React frontend and Node.js backend</li>
+                    <li>Integrated payment gateway and inventory management system</li>
+                    <li>Implemented responsive design for mobile and desktop users</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <ul>
+                    <li>Built a collaborative task management application with real-time updates</li>
+                    <li>Used WebSocket for live collaboration features</li>
+                    <li>Implemented user authentication and authorization</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Weather Dashboard</h3>
+                <ul>
+                    <li>Created a weather forecasting dashboard with multiple API integrations</li>
+                    <li>Developed interactive charts and maps for data visualization</li>
+                    <li>Optimized performance for fast loading times</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="container">
+        <h2>Recommendations</h2>
+        <div class="recommendations-container">
+            <div class="recommendation">
+                <p>"Mayukh is an exceptional developer who consistently delivers high-quality code. His attention to detail and problem-solving skills make him a valuable asset to any team. He quickly adapts to new technologies and always meets project deadlines."</p>
+            </div>
+            <div class="recommendation">
+                <p>"Working with Mayukh has been a great experience. His expertise in full-stack development and his ability to communicate complex technical concepts clearly sets him apart. I would highly recommend him for any web development project."</p>
+            </div>
+            <div class="recommendation">
+                <p>"Mayukh demonstrated remarkable skills during our project collaboration. His innovative approach to challenges and commitment to excellence resulted in a superior final product. He's a true team player and a skilled developer."</p>
+            </div>
+        </div>
+        
+        <!-- Recommendation Form -->
+        <div class="recommendation-form">
+            <h3>Leave a Recommendation</h3>
+            <form id="recommendationForm">
+                <input type="text" id="name" placeholder="Name (Optional)">
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="showPopup(false)">&times;</span>
+            <p>Thank you for leaving a recommendation!</p>
+            <button onclick="showPopup(false)">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
